@@ -1,0 +1,60 @@
+.dterm-terminal {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    background-color: #242424;
+}
+
+.dterm-mouse {
+    z-index: 999999;
+    background-color: white;
+    mix-blend-mode: difference;
+    position: absolute;
+}
+
+.dterm-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.dterm-term, .dterm-bg, .dterm-border {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+}
+
+.dterm-term, .dterm-border {
+    color: white;
+    mix-blend-mode: difference;
+    background-color: transparent;
+}
+
+.dterm-border-n, .dterm-border-s, .dterm-border-e, .dterm-border-w {
+    position: absolute;
+    background-color: transparent;
+}
+.dterm-border-n {
+    top: 0; left: 0; right: 0;
+}
+.dterm-border-s {
+    bottom: 0; left: 0; right: 0;
+}
+.dterm-border-e {
+    top: 0; bottom: 0; right: 0;
+    text-orientation: upright;
+}
+.dterm-border-w {
+    top: 0; bottom: 0; left: 0;
+    text-orientation: upright;
+}
+
+.dterm-bg {
+    background-color: #242424;
+}
